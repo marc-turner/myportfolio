@@ -1,19 +1,22 @@
-
-
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     color: #555;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
 }
 
 a {
@@ -24,7 +27,7 @@ ul {
     list-style: none;
 }
 
-h3.title{
+h3.title {
     color: #131633;
     text-transform: capitalize;
     font-size: 32px;
@@ -36,15 +39,15 @@ hr {
     width: 150px;
     height: 2px;
     background-color: #2196f3;
-    border:  0;
+    border: 0;
     margin: 40px auto;
 }
 
 /*----------------------------------------------------------
 HEADER
 ----------------------------------------------------------*/
-header{
-    background-color: rgba(0, 0, 0, .7);
+header {
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 10;
     top: 0;
@@ -61,7 +64,7 @@ header{
 header a {
     text-decoration: none;
     color: #fff;
-    opacity: .6;
+    opacity: 0.6;
     cursor: pointer;
 }
 
@@ -88,7 +91,7 @@ header nav li:last-child {
     margin-right: 0;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
     header {
         text-align: center;
         flex-direction: column;
@@ -115,33 +118,51 @@ HERO
     color: white;
     text-align: center;
 
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-image: url('img/HeroBG.jpg');
+    background-image: url("img/HeroBG.jpg");
     background-repeat: none;
     background-size: cover;
     min-height: 100vh;
 }
 
-#hero h1, #hero h3 {
-    font-size: 28px;
+#hero h1,
+#hero h3 {
     letter-spacing: 5px;
     text-shadow: 2px 2px #000;
-    margin-bottom: 40px;
-}  
+}
 
 #hero h1 {
     font-size: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
-#hero img{
-    border: 5px solid lightgray ;
+#hero h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+#hero img {
+    border: 5px solid lightgray;
     border-radius: 50%;
+}
+
+#hero ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero ul li {
+    margin: 0 8px;
+}
+
+#hero ul li a {
+    font-size: 36px;
+    cursor: pointer;
 }
 
 #hero a.btn {
@@ -151,7 +172,7 @@ HERO
     padding: 20px 46px;
     border-radius: 8px;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     opacity: 1;
     border: 2px solid white;
@@ -161,10 +182,10 @@ HERO
     background-color: #2196f3;
 }
 
-@media(max-width: 800px){
+@media (max-width: 800px) {
     #hero {
         min-height: 600px;
-    } 
+    }
 
     #hero h1 {
         font-size: 36px;
@@ -187,7 +208,6 @@ ABOUT
     padding: 10px;
     background-color: #f7f7f7;
     margin-bottom: 20px;
-
 }
 
 #two-cols {
@@ -197,9 +217,7 @@ ABOUT
     align-items: center;
 }
 
-
-
-.about-img img{
+.about-img img {
     border: 2px solid #2196f3;
     border-radius: 50%;
     max-width: 150px;
@@ -212,12 +230,13 @@ ABOUT
     margin-left: 20px;
 }
 
-@media(max-width:600px){
-    #about, #two-cols{
+@media (max-width: 600px) {
+    #about,
+    #two-cols {
         flex-direction: column;
     }
 
-    .about-bio{
+    .about-bio {
         margin-top: 20px;
         line-height: 1.5;
         text-align: left;
@@ -228,12 +247,12 @@ ABOUT
 SKILLS
 ----------------------------------------------------------*/
 
-#skills{
+#skills {
     background-color: #fff;
     margin-bottom: 20px;
 }
 
-#skills .skills-two-column{
+#skills .skills-two-column {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -244,17 +263,17 @@ SKILLS
     margin: 50px;
 }
 
-.skills-col h3{
+.skills-col h3 {
     margin-bottom: 10px;
 }
 
-.skills-col li{
+.skills-col li {
     line-height: 1.5;
     text-align: left;
 }
 
-@media(max-width: 600px){
-    #skills .skills-two-column{
+@media (max-width: 600px) {
+    #skills .skills-two-column {
         flex-direction: column;
     }
 
@@ -268,13 +287,16 @@ GALLERY
 ----------------------------------------------------------*/
 
 #gallery {
-    background-color:#fff;
+    background-color: #fff;
     margin-bottom: 20px;
 }
 
-#gallery p {
-    text-align: center;
-    margin-bottom: 30px;
+.gallery-header {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .gallery-container {
@@ -297,7 +319,7 @@ GALLERY
     border-radius: 15px;
 }
 
-@media(max-width: 800px){
+@media (max-width: 800px) {
     .gallery-container {
         flex-direction: column;
         justify-content: center;
@@ -309,7 +331,7 @@ GALLERY
     }
 }
 
-@media(max-width: 600px){
+@media (max-width: 600px) {
     .gallery-container img {
         max-width: 90%;
     }
@@ -332,7 +354,7 @@ WORK
     margin-bottom: 55px;
 }
 
-#work ul.grid li{
+#work ul.grid li {
     flex-basis: 30%;
     padding: 0 20px;
     margin-bottom: 40px;
@@ -344,19 +366,19 @@ WORK
     margin-bottom: 20px;
 }
 
-#work ul.grid li h4{
+#work ul.grid li h4 {
     color: #555;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-#work ul.grid li h3{
+#work ul.grid li h3 {
     color: #555;
     font-size: 15px;
     margin-bottom: 10px;
 }
 
-#work ul.grid li p{
+#work ul.grid li p {
     margin: 0;
     line-height: 1.5;
 }
@@ -365,7 +387,7 @@ WORK
     text-decoration: underline;
 }
 
-@media(max-width: 1000px){
+@media (max-width: 1000px) {
     #work {
         padding: 0 40px;
     }
@@ -375,13 +397,13 @@ WORK
         margin-bottom: 55px;
     }
 
-    #work ul.grid li p{
+    #work ul.grid li p {
         text-align: left;
     }
 }
 
-@media(max-width: 800px){
-    #work ul.grid{
+@media (max-width: 800px) {
+    #work ul.grid {
         flex-direction: column;
     }
 }
@@ -394,51 +416,50 @@ EDUCATION
     margin-bottom: 20px;
 }
 
-#education .school{
+#education .school {
     margin-bottom: 20px;
 }
 
-#education .school-logo1 img{
+#education .school-logo1 img {
     max-width: 100px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
 }
 
-#education .school-logo2 img{
+#education .school-logo2 img {
     max-width: 175px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
 }
 
-#education .school-degree{
+#education .school-degree {
     font-size: 20px;
     font-weight: 900;
     text-decoration: underline;
     margin: 10px;
 }
 
-#education .school-name{
+#education .school-name {
     margin-bottom: 10px;
 }
 
-@media(max-width:1000px){
-    
+@media (max-width: 1000px) {
 }
 
 /*----------------------------------------------------------
 CONTACT
 ----------------------------------------------------------*/
-section.flexbox-section{
-    width:100%;
+section.flexbox-section {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-section.flexbox-section p{
+section.flexbox-section p {
     max-width: 900px;
     text-align: center;
     margin-bottom: 35px;
@@ -446,10 +467,9 @@ section.flexbox-section p{
     line-height: 1.5;
 }
 
-section a{
+section a {
     color: black;
 }
-
 
 /*----------------------------------------------------------
 FOOTER
@@ -466,7 +486,7 @@ footer {
     align-items: center;
 }
 
-footer img{
+footer img {
     border: 1px solid black;
     border-radius: 50%;
     max-width: 80px;
@@ -476,7 +496,7 @@ footer img{
 footer p {
     text-transform: uppercase;
     font-size: 14px;
-    color: rgb(255, 255, 255, .6);
+    color: rgb(255, 255, 255, 0.6);
     margin-bottom: 10px;
 }
 
@@ -495,7 +515,7 @@ footer ul li a {
     cursor: pointer;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     footer {
         padding: 80px 15px;
     }
