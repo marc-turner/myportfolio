@@ -28,7 +28,7 @@ ul {
 }
 
 h3.title {
-    color: #131633;
+    color: #555;
     text-transform: capitalize;
     font-size: 32px;
     margin-bottom: 35px;
@@ -282,8 +282,84 @@ SKILLS
     }
 }
 
+/* ------------------------------------------------------
+PROJECTS 
+--------------------------------------------------------*/
+
+.project-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    width: 800px;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.project-screenshot {
+    margin: 10px;
+    width: 30%;
+}
+
+.project-box div img {
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid grey;
+}
+
+.tech-item {
+    margin-right: 5px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #dddcdc;
+    border-radius: 3px;
+    background-color: #616060;
+}
+
+.project-info {
+    width: 70%;
+    padding: 20px;
+}
+
+.project-info_headline {
+    letter-spacing: 2px;
+}
+
+.project-info_tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 10px 0;
+}
+
+.project-info_writeup {
+    line-height: 1.5;
+}
+
+.project-info_links {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info_link {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background-color: #3131b3;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.project-info_link a {
+    text-decoration: none;
+}
+
 /*----------------------------------------------------------
-GALLERY
+WEB DESIGN/UX/UI GALLERY
 ----------------------------------------------------------*/
 
 #gallery {
