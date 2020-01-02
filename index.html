@@ -11,8 +11,7 @@
         integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <style></style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body id="top">
@@ -27,8 +26,7 @@
                 <li><a href="#work">Work</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About/Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -73,17 +71,17 @@
                     </div>
                     <div class="project-info_writeup">
                         <p>
-                            I grew tired of repeat buying vinyl L.P.s so I
-                            thought how I'd love to have an app that I could
-                            check a title I'm interested in adding to my
-                            collection against a database of my existing
+                            I collect vinyl L.P's. As my collection grew, I found myself accidentally buying titles I
+                            already own. I
+                            thought how great it would be to have an app where I could
+                            check a title I'm interested in against a database of my
                             collection.
                         </p></br>
                         <p>
                             Using LAMP/CRUD methodologies and connection to
                             a remote database of album titles, the myVinyl
                             app solved the problem of a lousy memory and a
-                            large record collection
+                            large record collection.
                         </p>
                     </div></br>
                     <div class="project-info_links">
@@ -109,17 +107,17 @@
             <img src="img/ARSa.jpg" alt="Alpine River Suites" />
         </div>
     </div>
-    <hr />
     <!--**************************************************-->
 
     <div id="skills">
-        <h3 class="title">Skills, Tools, and Languages</h3>
+        <hr />
+        <h3 class="title">Skills, Tools, and Tech</h3>
         <div class="skills-two-column">
             <div class="skills-col">
                 <h3>Skills</h3>
                 <ul>
                     <li>Front End Development</li>
-                    <li>Web Applications</li>
+                    <li>Web Applications Development</li>
                     <li>Responsive Web Design</li>
                     <li>UX/UI Design</li>
                     <li>Graphic Design</li>
@@ -128,16 +126,16 @@
                 </ul>
             </div>
             <div class="skills-col">
-                <h3>Languages</h3>
+                <h3>Tech</h3>
                 <ul>
-                    <li>HTML/CSS</li>
+                    <li>HTML5/CSS3</li>
                     <li>PHP (Certified)</li>
                     <li>JavaScript</li>
                     <li>JQuery</li>
                     <li>Bootstrap</li>
                     <li>MySQL</li>
                     <li>MongoDB</li>
-                    <li>Node.js/express.js</li>
+                    <li>Node.js/express.js/npm</li>
                     <!-- <li>React.js</li> -->
                 </ul>
             </div>
@@ -153,11 +151,11 @@
                 </ul>
             </div>
         </div>
-        <hr />
     </div>
     <!--************************************************-->
 
     <div id="work">
+        <hr />
         <h3 class="title">Work Experience</h3>
         <ul class="grid">
             <li>
@@ -201,10 +199,10 @@
                 </p>
             </li>
         </ul>
-        <hr />
     </div>
     <!--********************************************-->
     <div id="education">
+        <hr />
         <h3 class="title">Education</h3>
         <div class="school">
             <p class="school-logo2"><img src="img/chattTechLogo.png" /></p>
@@ -238,20 +236,20 @@
             <p class="school-degree">Skills Development</p>
             <p class="school-name">Various Online Platforms<br /></p>
         </div>
-        <hr />
     </div>
     <!--************************************-->
     <div id="resume">
+        <hr />
         <h3 class="title">Resume</h3>
         <div class="resume-container">
             <!-- resume here -->
-            <embed src="pdf/MarcTurner_resume_2019.pdf" type="application/pdf" width="100%" height="600px" />
+            <embed src="pdf/MarcTurner_resume_2020.pdf" type="application/pdf" width="100%" height="600px" />
         </div>
-        <hr />
     </div>
     <!--************************************-->
 
     <div id="about">
+        <hr />
         <h3 class="title">About Me</h3>
         <div id="two-cols">
             <div class="about-bio">
@@ -264,10 +262,10 @@
             </div>
             <p>&nbsp;</p>
         </div>
-        <hr />
     </div>
     <!--*****************************************-->
     <div id="contact">
+        <hr />
         <h3 class="title">Contact</h3>
         <section class="flexbox-section">
             <p>
@@ -317,12 +315,12 @@
                     .stop()
                     .animate(
                         {
-                            scrollTop: $target.offset().top - 110
+                            scrollTop: $target.offset().top - 80
                         },
                         900,
                         "swing",
                         function () {
-                            window.location.hash = target - 110;
+                            window.location.hash = target - 100;
                         }
                     );
             });
